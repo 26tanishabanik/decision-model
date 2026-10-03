@@ -1,0 +1,27 @@
+[project]
+name = "decision-model"
+version = "0.1.0"
+description = "A calibrated typed-decision model: one forward pass, a probability for every allowed answer."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "torch==2.11.0", "transformers==5.10.2", "peft", "accelerate", "safetensors", "huggingface_hub",
+  "numpy>=1.26", "pandas>=2.2", "scipy>=1.13", "scikit-learn>=1.5", "datasets>=3.0", "matplotlib>=3.9",
+  "modal>=0.73", "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+# Qwen3.5 linear-attention kernels (used on GPU by the Modal image)
+gpu = ["flash-linear-attention", "tilelang"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

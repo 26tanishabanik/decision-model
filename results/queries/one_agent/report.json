@@ -1,0 +1,316 @@
+{
+ "table": {
+  "earlier": {
+   "ALL": [
+    0.754,
+    61
+   ],
+   "type:choice": [
+    0.76,
+    25
+   ],
+   "domain:customer_support": [
+    0.75,
+    8
+   ],
+   "yes_no:says_true": [
+    0.586,
+    29
+   ],
+   "type:yes_no": [
+    0.828,
+    29
+   ],
+   "yes_no:bare": [
+    0.8,
+    15
+   ],
+   "yes_no:gold_true": [
+    0.929,
+    14
+   ],
+   "yes_no:described": [
+    0.857,
+    14
+   ],
+   "yes_no:gold_false": [
+    0.733,
+    15
+   ],
+   "score:within_1": [
+    0.857,
+    7
+   ],
+   "type:score": [
+    0.429,
+    7
+   ],
+   "domain:agent_traces": [
+    0.875,
+    8
+   ],
+   "domain:security": [
+    0.5,
+    6
+   ],
+   "domain:content_moderation": [
+    0.833,
+    6
+   ],
+   "domain:tool_routing": [
+    1.0,
+    7
+   ],
+   "domain:reading_comprehension_facts": [
+    0.75,
+    8
+   ],
+   "domain:everyday_reasoning": [
+    0.667,
+    6
+   ],
+   "domain:business_documents": [
+    0.714,
+    7
+   ],
+   "domain:misc": [
+    0.6,
+    5
+   ]
+  },
+  "frozen": {
+   "ALL": [
+    0.738,
+    61
+   ],
+   "type:choice": [
+    0.72,
+    25
+   ],
+   "domain:customer_support": [
+    0.75,
+    8
+   ],
+   "yes_no:says_true": [
+    0.586,
+    29
+   ],
+   "type:yes_no": [
+    0.828,
+    29
+   ],
+   "yes_no:bare": [
+    0.867,
+    15
+   ],
+   "yes_no:gold_true": [
+    0.929,
+    14
+   ],
+   "yes_no:described": [
+    0.786,
+    14
+   ],
+   "yes_no:gold_false": [
+    0.733,
+    15
+   ],
+   "score:within_1": [
+    1.0,
+    7
+   ],
+   "type:score": [
+    0.429,
+    7
+   ],
+   "domain:agent_traces": [
+    0.5,
+    8
+   ],
+   "domain:security": [
+    0.833,
+    6
+   ],
+   "domain:content_moderation": [
+    0.833,
+    6
+   ],
+   "domain:tool_routing": [
+    1.0,
+    7
+   ],
+   "domain:reading_comprehension_facts": [
+    0.75,
+    8
+   ],
+   "domain:everyday_reasoning": [
+    0.5,
+    6
+   ],
+   "domain:business_documents": [
+    0.714,
+    7
+   ],
+   "domain:misc": [
+    0.8,
+    5
+   ]
+  },
+  "frozen_l20_mean": {
+   "ALL": [
+    0.836,
+    61
+   ],
+   "type:choice": [
+    0.8,
+    25
+   ],
+   "domain:customer_support": [
+    1.0,
+    8
+   ],
+   "yes_no:says_true": [
+    0.621,
+    29
+   ],
+   "type:yes_no": [
+    0.862,
+    29
+   ],
+   "yes_no:bare": [
+    0.867,
+    15
+   ],
+   "yes_no:gold_true": [
+    1.0,
+    14
+   ],
+   "yes_no:described": [
+    0.857,
+    14
+   ],
+   "yes_no:gold_false": [
+    0.733,
+    15
+   ],
+   "score:within_1": [
+    1.0,
+    7
+   ],
+   "type:score": [
+    0.857,
+    7
+   ],
+   "domain:agent_traces": [
+    0.5,
+    8
+   ],
+   "domain:security": [
+    0.833,
+    6
+   ],
+   "domain:content_moderation": [
+    1.0,
+    6
+   ],
+   "domain:tool_routing": [
+    1.0,
+    7
+   ],
+   "domain:reading_comprehension_facts": [
+    0.875,
+    8
+   ],
+   "domain:everyday_reasoning": [
+    0.667,
+    6
+   ],
+   "domain:business_documents": [
+    0.857,
+    7
+   ],
+   "domain:misc": [
+    0.8,
+    5
+   ]
+  },
+  "lora": {
+   "ALL": [
+    0.918,
+    61
+   ],
+   "type:choice": [
+    0.96,
+    25
+   ],
+   "domain:customer_support": [
+    1.0,
+    8
+   ],
+   "yes_no:says_true": [
+    0.586,
+    29
+   ],
+   "type:yes_no": [
+    0.897,
+    29
+   ],
+   "yes_no:bare": [
+    1.0,
+    15
+   ],
+   "yes_no:gold_true": [
+    1.0,
+    14
+   ],
+   "yes_no:described": [
+    0.786,
+    14
+   ],
+   "yes_no:gold_false": [
+    0.8,
+    15
+   ],
+   "score:within_1": [
+    1.0,
+    7
+   ],
+   "type:score": [
+    0.857,
+    7
+   ],
+   "domain:agent_traces": [
+    0.75,
+    8
+   ],
+   "domain:security": [
+    1.0,
+    6
+   ],
+   "domain:content_moderation": [
+    1.0,
+    6
+   ],
+   "domain:tool_routing": [
+    1.0,
+    7
+   ],
+   "domain:reading_comprehension_facts": [
+    1.0,
+    8
+   ],
+   "domain:everyday_reasoning": [
+    0.833,
+    6
+   ],
+   "domain:business_documents": [
+    0.857,
+    7
+   ],
+   "domain:misc": [
+    0.8,
+    5
+   ]
+  }
+ }
+}

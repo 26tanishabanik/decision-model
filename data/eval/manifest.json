@@ -1,0 +1,593 @@
+{
+ "built": "2026-09-28",
+ "seed": 0,
+ "sets": {
+  "anli_test": {
+   "config": null,
+   "count": 3200,
+   "dataset": "facebook/anli",
+   "file": "data/eval/anli_test.jsonl",
+   "gold_top5": [
+    [
+     "entailment",
+     1070
+    ],
+    [
+     "neutral",
+     1068
+    ],
+    [
+     "contradiction",
+     1062
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-NC-4.0"
+   ],
+   "n_groups": 2854,
+   "n_options": {
+    "max": 3,
+    "mean": 3.0,
+    "min": 3
+   },
+   "n_soft_targets": 0,
+   "notes": "Rounds 1-3 test sets; the hypothesis is in the instructions.",
+   "qtype": {
+    "choice": 3200
+   },
+   "revision": "8e4813d81f46d313dac7892e1c28076917cfcdf9",
+   "roles": {},
+   "sha256": "328e9909a183895627f399b72d329b89933fa94fa189c6a9200d769b79128314"
+  },
+  "banking77_test": {
+   "config": null,
+   "count": 3076,
+   "dataset": "mteb/banking77",
+   "file": "data/eval/banking77_test.jsonl",
+   "gold_top5": [
+    [
+     "card_arrival",
+     40
+    ],
+    [
+     "card_linking",
+     40
+    ],
+    [
+     "exchange_rate",
+     40
+    ],
+    [
+     "card_payment_wrong_exchange_rate",
+     40
+    ],
+    [
+     "extra_charge_on_statement",
+     40
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-4.0"
+   ],
+   "n_groups": 3076,
+   "n_options": {
+    "max": 77,
+    "mean": 77.0,
+    "min": 77
+   },
+   "n_soft_targets": 0,
+   "notes": "Choice over all 77 intents in label-id order, keys = native intent names, text = readable name. Rows from the mteb/banking77 parquet copy: 3,076 test rows (the original release has 3,080).",
+   "qtype": {
+    "choice": 3076
+   },
+   "revision": "18072d2685ea682290f7b8924d94c62acc19c0b2",
+   "roles": {},
+   "sha256": "1b487f7bc53ccfb9c33c82c491b4e82f283ad9fab7823dbc9185f890adbeeacc"
+  },
+  "bfcl_select": {
+   "build_stats": {
+    "notes": {
+     "exec_multiple": {
+      "skipped_items": 0
+     },
+     "live_multiple": {
+      "answer_id_mismatches_matched_by_index": 1,
+      "skipped_items": 0
+     },
+     "multiple": {
+      "answer_id_mismatches_matched_by_index": 0,
+      "skipped_items": 0
+     }
+    }
+   },
+   "config": null,
+   "count": 1303,
+   "dataset": "gorilla-llm/Berkeley-Function-Calling-Leaderboard",
+   "file": "data/eval/bfcl_select.jsonl",
+   "gold_top5": [
+    [
+     "Events_3_FindEvents",
+     84
+    ],
+    [
+     "Movies_3_FindMovies",
+     76
+    ],
+    [
+     "Music_3_LookupMusic",
+     62
+    ],
+    [
+     "Weather_1_GetWeather",
+     40
+    ],
+    [
+     "Movies_1_FindMovies",
+     37
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "Apache-2.0"
+   ],
+   "n_groups": 529,
+   "n_options": {
+    "max": 37,
+    "mean": 3.75,
+    "min": 2
+   },
+   "n_soft_targets": 0,
+   "notes": "Tool selection. Categories multiple, live_multiple, exec_multiple: one ground-truth call, >= 2 candidate functions with unique names. State = user query (live: 'Role: content' lines when a system message is present); options = 'name: description', keyed by function name, order shuffled per item (seed 0). Only the function NAME is scored, not arguments.",
+   "qtype": {
+    "choice": 1303
+   },
+   "revision": "61fc0608cfd831fcfbbaa676ebdfef0ed963eeda",
+   "roles": {},
+   "sha256": "0637aeeec8837f9d45166cd47eadf2a0b254ef801ee4c2b5edc6e4135d3ec3e9",
+   "skipped_categories": {
+    "chatable": "no functions",
+    "irrelevance, live_irrelevance": "gold is 'call nothing', so there is no correct function to choose",
+    "live_relevance": "no ground truth released",
+    "multi_turn_*": "multi-step: gold is a sequence of calls per turn, state changes between turns",
+    "parallel_multiple, live_parallel_multiple, exec_parallel_multiple": "gold is a set of 2-5 calls, usually to different functions: no single correct option",
+    "simple, parallel, live_simple, live_parallel, java, javascript, sql, exec_simple, exec_parallel, rest": "exactly one candidate function (live_parallel: 1-2), so there is no choice to make"
+   }
+  },
+  "clinc_test": {
+   "config": "plus",
+   "count": 5500,
+   "dataset": "clinc/clinc_oos",
+   "file": "data/eval/clinc_test.jsonl",
+   "gold_top5": [
+    [
+     "out_of_scope",
+     1000
+    ],
+    [
+     "translate",
+     30
+    ],
+    [
+     "transfer",
+     30
+    ],
+    [
+     "timer",
+     30
+    ],
+    [
+     "definition",
+     30
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-3.0"
+   ],
+   "n_groups": 5500,
+   "n_options": {
+    "max": 151,
+    "mean": 151.0,
+    "min": 151
+   },
+   "n_soft_targets": 0,
+   "notes": "'plus' config test: 150 intents x 30 + 1000 out-of-scope. Choice over 150 intents (alphabetical) + out_of_scope last; meta.oos marks OOS items.",
+   "qtype": {
+    "choice": 5500
+   },
+   "revision": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+   "roles": {},
+   "sha256": "00aea0887e53626dba980b0e96ec40e11400a6ad18b8e01d52332ee0aa066c34"
+  },
+  "hellaswag_val": {
+   "config": null,
+   "count": 10042,
+   "dataset": "Rowan/hellaswag",
+   "file": "data/eval/hellaswag_val.jsonl",
+   "gold_top5": [
+    [
+     "C",
+     2584
+    ],
+    [
+     "A",
+     2515
+    ],
+    [
+     "B",
+     2485
+    ],
+    [
+     "D",
+     2458
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "MIT"
+   ],
+   "n_groups": 8407,
+   "n_options": {
+    "max": 4,
+    "mean": 4.0,
+    "min": 4
+   },
+   "n_soft_targets": 0,
+   "notes": "Validation split (test labels are hidden). State = 'activity_label: ctx'; 4 endings A-D in native order. Endings are machine-generated adversarial distractors, so no roles.",
+   "qtype": {
+    "choice": 10042
+   },
+   "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+   "roles": {},
+   "sha256": "471e97d1c18d3852f9c447dbf881d5d3e6910a0e31e7d82f018d6fe3fa810ba6"
+  },
+  "openbookqa_test": {
+   "config": "main",
+   "count": 500,
+   "dataset": "allenai/openbookqa",
+   "file": "data/eval/openbookqa_test.jsonl",
+   "gold_top5": [
+    [
+     "A",
+     138
+    ],
+    [
+     "C",
+     132
+    ],
+    [
+     "B",
+     126
+    ],
+    [
+     "D",
+     104
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "Apache-2.0"
+   ],
+   "n_groups": 500,
+   "n_options": {
+    "max": 4,
+    "mean": 4.0,
+    "min": 4
+   },
+   "n_soft_targets": 0,
+   "notes": "'main' config test, closed book (the fact is not given). Native A-D order; distractors = hard.",
+   "qtype": {
+    "choice": 500
+   },
+   "revision": "388097ea7776314e93a529163e0fea805b8a6454",
+   "roles": {
+    "correct": 500,
+    "hard": 1500
+   },
+   "sha256": "3aa23440d79f025ca2d962411e90f1f705fa02b31adc7a035c68e85dd3bbaf7e"
+  },
+  "prompt_injection": {
+   "config": null,
+   "count": 116,
+   "dataset": "deepset/prompt-injections",
+   "file": "data/eval/prompt_injection.jsonl",
+   "gold_top5": [
+    [
+     "true",
+     60
+    ],
+    [
+     "false",
+     56
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "Apache-2.0"
+   ],
+   "n_groups": 116,
+   "n_options": {
+    "max": 2,
+    "mean": 2.0,
+    "min": 2
+   },
+   "n_soft_targets": 0,
+   "notes": "Test split; true = prompt injection.",
+   "qtype": {
+    "yes_no": 116
+   },
+   "revision": "4f61ecb038e9c3fb77e21034b22511b523772cdd",
+   "roles": {},
+   "sha256": "9b315d2a9f6790732fb1d10ad16148f62c9e4a6be135cd2addac51d661761c16"
+  },
+  "scifact_select": {
+   "config": null,
+   "count": 393,
+   "dataset": "SciFact release tarball (https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz)",
+   "file": "data/eval/scifact_select.jsonl",
+   "gold_top5": [
+    [
+     "C",
+     106
+    ],
+    [
+     "B",
+     102
+    ],
+    [
+     "D",
+     98
+    ],
+    [
+     "A",
+     87
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-NC-2.0"
+   ],
+   "n_groups": 393,
+   "n_options": {
+    "max": 4,
+    "mean": 4.0,
+    "min": 4
+   },
+   "n_soft_targets": 0,
+   "notes": "Seed 0. State = title + abstract; options = first SUPPORT claim (correct), first CONTRADICT claim if any (hard), unrelated claims from other docs up to 4 options (unrelated). Docs without a SUPPORT claim are dropped.",
+   "qtype": {
+    "choice": 393
+   },
+   "revision": "sha256:11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+   "roles": {
+    "correct": 393,
+    "hard": 179,
+    "unrelated": 1000
+   },
+   "sha256": "736153c669d54562bc9a603e239344d52bc2ce0ad45d06e9bbe2fe2963b1557f"
+  },
+  "scifact_verify": {
+   "config": null,
+   "count": 773,
+   "dataset": "SciFact release tarball (https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz)",
+   "file": "data/eval/scifact_verify.jsonl",
+   "gold_top5": [
+    [
+     "support",
+     508
+    ],
+    [
+     "contradict",
+     265
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-NC-2.0"
+   ],
+   "n_groups": 437,
+   "n_options": {
+    "max": 2,
+    "mean": 2.0,
+    "min": 2
+   },
+   "n_soft_targets": 0,
+   "notes": "All labelled SciFact claim-doc pairs from official train + dev; state = annotated rationale sentences; claim in instructions; criteria support/contradict.",
+   "qtype": {
+    "choice": 773
+   },
+   "revision": "sha256:11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+   "roles": {},
+   "sha256": "71e38db592546e9bf16fe962bedd2433174dff39449dccacee17906724dafa7b"
+  },
+  "sciq_test": {
+   "build_stats": {
+    "n_skip": 9
+   },
+   "config": null,
+   "count": 991,
+   "dataset": "allenai/sciq",
+   "file": "data/eval/sciq_test.jsonl",
+   "gold_top5": [
+    [
+     "A",
+     259
+    ],
+    [
+     "C",
+     256
+    ],
+    [
+     "B",
+     245
+    ],
+    [
+     "D",
+     231
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-NC-3.0"
+   ],
+   "n_groups": 991,
+   "n_options": {
+    "max": 4,
+    "mean": 4.0,
+    "min": 4
+   },
+   "n_soft_targets": 0,
+   "notes": "Test, closed book (support paragraph not given). Correct + 3 human distractors shuffled per item (seed 0); distractors = hard.",
+   "qtype": {
+    "choice": 991
+   },
+   "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+   "roles": {
+    "correct": 991,
+    "hard": 2973
+   },
+   "sha256": "1f2a55a1324f2228ba7f1e4d1ebf52f862fd508c71ae644f691a74a2289220d3"
+  },
+  "toxic_chat": {
+   "config": "toxicchat0124",
+   "count": 5083,
+   "dataset": "lmsys/toxic-chat",
+   "file": "data/eval/toxic_chat.jsonl",
+   "gold_top5": [
+    [
+     "false",
+     4721
+    ],
+    [
+     "true",
+     362
+    ]
+   ],
+   "label_source": [
+    "human"
+   ],
+   "license": [
+    "CC-BY-NC-4.0"
+   ],
+   "n_groups": 5083,
+   "n_options": {
+    "max": 2,
+    "mean": 2.0,
+    "min": 2
+   },
+   "n_soft_targets": 0,
+   "notes": "toxicchat0124 test split; true = toxic.",
+   "qtype": {
+    "yes_no": 5083
+   },
+   "revision": "29df8e4dba60e1f4af4b4075c0705c5b313548a8",
+   "roles": {},
+   "sha256": "3ca6ccb7d0f3d8252b7fa5af99c6fcba1e185bf5a52021923d09e3751d4317a0"
+  },
+  "typed_decisions_test": {
+   "build_stats": {
+    "n_label_mismatch": 0
+   },
+   "config": "all",
+   "count": 2000,
+   "dataset": "LocalLLaMA/typed-decisions",
+   "file": "data/eval/typed_decisions_test.jsonl",
+   "gold_top5": [
+    [
+     "true",
+     305
+    ],
+    [
+     "false",
+     295
+    ],
+    [
+     "3",
+     254
+    ],
+    [
+     "2",
+     252
+    ],
+    [
+     "1",
+     160
+    ]
+   ],
+   "label_source": [
+    "llm"
+   ],
+   "license": [
+    "Apache-2.0"
+   ],
+   "n_groups": 400,
+   "n_options": {
+    "max": 5,
+    "mean": 3.55,
+    "min": 2
+   },
+   "n_soft_targets": 1998,
+   "notes": "One item per (case, question): 400 cases x 5. Target = teacher gold probabilities (renormalised); gold = argmax, ties broken towards the released label. The two yes_no questions that ship no criteria (invoice duplicate, security credential_compromise) get typed_decisions.YES_NO_FALLBACK (meta.criteria_filled). Synthetic states, LLM-teacher labels (mean of 3 samples).",
+   "qtype": {
+    "choice": 600,
+    "score": 800,
+    "yes_no": 600
+   },
+   "revision": "f7a2487edd7a043a5441a5e9ccc7fe5ddbd9ebe8",
+   "roles": {},
+   "sha256": "41e3cad6c0f22cb680f0bd2b51affd527821bc903d4efac21d3a80a5738b6cc1"
+  }
+ },
+ "wordings": {
+  "BANKING_Q": "Which intent does this online-banking customer message express?",
+  "BFCL_Q": "Which function should be called to fulfil the user's request?",
+  "CLINC_OOS_KEY": "out_of_scope",
+  "CLINC_OOS_TEXT": "Out of scope: the request matches none of the listed intents.",
+  "CLINC_Q": "Which intent does this request to a virtual assistant express? Choose out of scope if none of the listed intents applies.",
+  "HELLASWAG_Q": "Which ending most plausibly continues the text?",
+  "INJECTION_CRIT": {
+   "false": "The text is not a prompt injection or jailbreak attempt.",
+   "true": "The text is a prompt injection or jailbreak attempt."
+  },
+  "INJECTION_Q": "Is this text a prompt injection or jailbreak attempt that tries to override or ignore an AI assistant's instructions?",
+  "NLI_CRIT": {
+   "contradiction": "The hypothesis is definitely false given the text.",
+   "entailment": "The hypothesis is definitely true given the text.",
+   "neutral": "The hypothesis might be true or false; the text does not say."
+  },
+  "OBQA_Q": "Which option correctly answers the question?",
+  "SCIQ_Q": "Which option correctly answers the question?",
+  "SELECT_Q": "Which claim does this abstract support?",
+  "TOXICITY_CRIT": {
+   "false": "The user message is not toxic.",
+   "true": "The user message is toxic."
+  },
+  "TOXICITY_Q": "Is this user message toxic, meaning harmful, offensive, sexual, or otherwise inappropriate?",
+  "VERIFY_CRIT": {
+   "contradict": "The evidence contradicts the claim.",
+   "support": "The evidence supports the claim."
+  }
+ }
+}

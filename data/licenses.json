@@ -1,0 +1,308 @@
+{
+ "description": "Datasets behind the training data and the test sets: pinned revision, license ids, use (train / eval) and who produced the labels (see LABEL_SOURCES in src/decision_model/schema.py).",
+ "sources": [
+  {
+   "dataset": "tals/vitaminc",
+   "revision": "be6febb761b0b2807687e61e0b5282e459df2fa0",
+   "licenses": [
+    "CC-BY-SA-3.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "stanfordnlp/snli",
+   "revision": "cdb5c3d5eed6ead6e5a341c8e56e669bb666725b",
+   "licenses": [
+    "CC-BY-SA-4.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human_multi",
+    "human"
+   ]
+  },
+  {
+   "dataset": "alisawuffles/WANLI",
+   "revision": "61c95318fd71c55b6ba355d76253254615f387ec",
+   "licenses": [
+    "CC-BY-4.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human_on_llm_text"
+   ]
+  },
+  {
+   "dataset": "allenai/ai2_arc",
+   "revision": "210d026faf9955653af8916fad021475a3f00453",
+   "licenses": [
+    "CC-BY-SA-4.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "PolyAI/banking77",
+   "revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+   "licenses": [
+    "CC-BY-4.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "mteb/banking77",
+   "revision": "18072d2685ea682290f7b8924d94c62acc19c0b2",
+   "licenses": [
+    "CC-BY-4.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "clinc/clinc_oos",
+   "revision": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+   "licenses": [
+    "CC-BY-3.0"
+   ],
+   "use": [
+    "train",
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "AmazonScience/massive",
+   "revision": "ff6bd8e4b27c3543e4f8fe2108f32bb95a6f8740",
+   "licenses": [
+    "CC-BY-4.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "LocalLLaMA/typed-decisions",
+   "revision": "f7a2487edd7a043a5441a5e9ccc7fe5ddbd9ebe8",
+   "licenses": [
+    "Apache-2.0"
+   ],
+   "use": [
+    "train",
+    "eval"
+   ],
+   "labels": [
+    "llm"
+   ]
+  },
+  {
+   "dataset": "google/boolq",
+   "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+   "licenses": [
+    "CC-BY-SA-3.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "google/civil_comments",
+   "revision": "f2970eb3a55777454c94069077cc8d9b5866312d",
+   "licenses": [
+    "CC0-1.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human_multi"
+   ]
+  },
+  {
+   "dataset": "nvidia/HelpSteer2",
+   "revision": "990b2711a36180dd19d9c94b8627844866f8982a",
+   "licenses": [
+    "CC-BY-4.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human_multi"
+   ]
+  },
+  {
+   "dataset": "https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz",
+   "revision": "sha256:11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+   "licenses": [
+    "CC-BY-4.0 (claims)",
+    "ODC-By-1.0 (abstracts)"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "facebook/anli",
+   "revision": "8e4813d81f46d313dac7892e1c28076917cfcdf9",
+   "licenses": [
+    "CC-BY-NC-4.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "lmsys/toxic-chat",
+   "revision": "29df8e4dba60e1f4af4b4075c0705c5b313548a8",
+   "licenses": [
+    "CC-BY-NC-4.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "deepset/prompt-injections",
+   "revision": "4f61ecb038e9c3fb77e21034b22511b523772cdd",
+   "licenses": [
+    "Apache-2.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "gorilla-llm/Berkeley-Function-Calling-Leaderboard",
+   "revision": "61fc0608cfd831fcfbbaa676ebdfef0ed963eeda",
+   "licenses": [
+    "Apache-2.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "Rowan/hellaswag",
+   "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+   "licenses": [
+    "MIT"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human_on_llm_text"
+   ]
+  },
+  {
+   "dataset": "allenai/openbookqa",
+   "revision": "388097ea7776314e93a529163e0fea805b8a6454",
+   "licenses": [
+    "Apache-2.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "allenai/sciq",
+   "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+   "licenses": [
+    "CC-BY-NC-3.0"
+   ],
+   "use": [
+    "eval"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "jackhhao/jailbreak-classification",
+   "revision": "2f2ceeb39658696fd3f462403562b6eea5306287",
+   "licenses": [
+    "Apache-2.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "Lakera/gandalf_ignore_instructions",
+   "revision": "04737b65e90a6794ec227012e4a255a7def6344b",
+   "licenses": [
+    "MIT"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  },
+  {
+   "dataset": "Atarogic/ASSEBench",
+   "revision": "fbec8aa93e2161d71ff535673939dd8e395d39e3",
+   "licenses": [
+    "Apache-2.0"
+   ],
+   "use": [
+    "train"
+   ],
+   "labels": [
+    "human"
+   ]
+  }
+ ]
+}

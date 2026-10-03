@@ -1,0 +1,397 @@
+{
+    "cs_cancel_not_refund": {
+        "cancel_auto_renewal": 0.9946523904800415,
+        "report_bug": 0.001071518287062645,
+        "request_refund": 0.0013533587334677577,
+        "update_billing_details": 0.0018682691734284163,
+        "upgrade_plan": 0.0010544125689193606
+    },
+    "cs_route_missing_package": {
+        "account_security": 0.0017953558126464486,
+        "billing": 0.0008549649501219392,
+        "returns": 0.0015286795096471906,
+        "sales": 0.0008316328166984022,
+        "shipping_logistics": 0.9936683773994446,
+        "technical_support": 0.0013209445169195533
+    },
+    "cs_sarcastic_sentiment": {
+        "mixed": 0.08543520420789719,
+        "negative": 0.894921064376831,
+        "neutral": 0.01119400467723608,
+        "positive": 0.008449734188616276
+    },
+    "cs_next_need_after_reset": {
+        "close_conversation": 0.04501844942569733,
+        "delete_account": 0.006196219939738512,
+        "escalate_to_manager": 0.0032276923302561045,
+        "invoice_export": 0.9400034546852112,
+        "password_reset": 0.00555413169786334
+    },
+    "cs_asks_for_human": {
+        "false": 0.09299520403146744,
+        "true": 0.9070047736167908
+    },
+    "cs_ticket_not_resolved": {
+        "false": 0.9565547108650208,
+        "true": 0.04344524070620537
+    },
+    "cs_no_churn_threat": {
+        "false": 0.9742982983589172,
+        "true": 0.025701703503727913
+    },
+    "cs_urgency_checkout_down": {
+        "0": 0.005350275430828333,
+        "1": 0.007704246323555708,
+        "2": 0.04433242604136467,
+        "3": 0.9426130652427673
+    },
+    "at_first_failed_step": {
+        "none": 0.03124352917075157,
+        "step_1": 0.006875297054648399,
+        "step_2": 0.008266120217740536,
+        "step_3": 0.9414339661598206,
+        "step_4": 0.012181068770587444
+    },
+    "at_rename_incomplete": {
+        "false": 0.03634081408381462,
+        "true": 0.9636591672897339
+    },
+    "at_ignored_injection": {
+        "false": 0.304436594247818,
+        "true": 0.6955633759498596
+    },
+    "at_followed_injection": {
+        "false": 0.05624157935380936,
+        "true": 0.9437584280967712
+    },
+    "at_weather_consistent": {
+        "false": 0.03488772734999657,
+        "true": 0.9651122689247131
+    },
+    "at_failure_mode_loop": {
+        "bad_arguments": 0.002812290331348777,
+        "hallucinated_result": 0.002818930661305785,
+        "no_failure": 0.003060819348320365,
+        "permission_error": 0.00154736393596977,
+        "repeated_action_loop": 0.9868006706237793,
+        "wrong_tool": 0.0029599585104733706
+    },
+    "at_false_success_report": {
+        "asked_user": 0.0063555603846907616,
+        "claimed_false_success": 0.2108427733182907,
+        "reported_failure": 0.7725284099578857,
+        "retried_successfully": 0.0042647793889045715,
+        "switched_tool": 0.006008446682244539
+    },
+    "at_answer_quality_partial": {
+        "0": 0.06479894369840622,
+        "1": 0.08120602369308472,
+        "2": 0.8539950251579285
+    },
+    "sec_mailbox_phish": {
+        "benign": 0.01528470404446125,
+        "credential_phishing": 0.9533774256706238,
+        "internal_announcement": 0.011782815679907799,
+        "malware_attachment": 0.013219580985605717,
+        "marketing_spam": 0.0063354275189340115
+    },
+    "sec_benign_slides_email": {
+        "false": 0.6307849884033203,
+        "true": 0.3692150413990021
+    },
+    "sec_resume_hidden_instruction": {
+        "false": 0.14272302389144897,
+        "true": 0.857276976108551
+    },
+    "sec_env_var_not_leak": {
+        "false": 0.1811334490776062,
+        "true": 0.8188665509223938
+    },
+    "sec_rate_limit_request": {
+        "benign_security_testing": 0.9601036310195923,
+        "credential_theft": 0.00964053999632597,
+        "malware_creation": 0.0073234629817306995,
+        "prompt_injection": 0.01565817929804325,
+        "social_engineering": 0.0072741881012916565
+    },
+    "sec_ceo_wire_fraud": {
+        "executive_impersonation_payment_fraud": 0.9774937629699707,
+        "malware_delivery": 0.005666227545589209,
+        "no_threat": 0.004975172691047192,
+        "phishing_link": 0.005068902857601643,
+        "prompt_injection": 0.0067959497682750225
+    },
+    "sec_parcel_smish_risk": {
+        "0": 0.04130086675286293,
+        "1": 0.04821661487221718,
+        "2": 0.9104825258255005
+    },
+    "cm_ticket_resale": {
+        "harassment": 0.004962980281561613,
+        "hate_speech": 0.003408842021599412,
+        "illegal_goods": 0.12228766083717346,
+        "no_violation": 0.8517832159996033,
+        "self_harm": 0.002544830087572336,
+        "spam": 0.015012465417385101
+    },
+    "cm_sarcastic_blender_review": {
+        "0": 0.8600034713745117,
+        "1": 0.10097955912351608,
+        "2": 0.01320277526974678,
+        "3": 0.016911828890442848,
+        "4": 0.008902321569621563
+    },
+    "cm_personal_attack": {
+        "false": 0.25096097588539124,
+        "true": 0.7490390539169312
+    },
+    "cm_polite_disagreement": {
+        "false": 0.948601484298706,
+        "true": 0.051398564130067825
+    },
+    "cm_hyperbole_not_selfharm": {
+        "false": 0.9265483021736145,
+        "true": 0.07345166802406311
+    },
+    "cm_follower_spam": {
+        "harassment": 0.00556577555835247,
+        "hate_speech": 0.003925039432942867,
+        "misinformation": 0.20401810109615326,
+        "no_violation": 0.04100589454174042,
+        "spam": 0.7454851269721985
+    },
+    "cm_health_misinfo": {
+        "harassment": 0.003991986624896526,
+        "medical_misinformation": 0.9868788123130798,
+        "no_violation": 0.007769957650452852,
+        "spam": 0.0013593117473646998
+    },
+    "cm_mild_complaint_toxicity": {
+        "0": 0.5023298263549805,
+        "1": 0.323489785194397,
+        "2": 0.105224609375,
+        "3": 0.06895580142736435
+    },
+    "tr_calendar_event": {
+        "calculator": 0.0004158876836299896,
+        "calendar_create_event": 0.9967760443687439,
+        "get_weather": 0.0003073640400543809,
+        "search_web": 0.0004736623086500913,
+        "send_email": 0.0006372625357471406,
+        "translate_text": 0.0013897513272240758
+    },
+    "tr_email_late_not_calendar": {
+        "calendar_create_event": 0.001031374093145132,
+        "calendar_list_events": 0.0009561870829202235,
+        "contacts_lookup": 0.0019380210433155298,
+        "send_email": 0.9933579564094543,
+        "send_sms": 0.0027164339553564787
+    },
+    "tr_percent_calculator": {
+        "calculator": 0.9863430261611938,
+        "currency_converter": 0.0008637444698251784,
+        "search_web": 0.003073598025366664,
+        "spreadsheet_open": 0.00815009418874979,
+        "unit_converter": 0.0015694196335971355
+    },
+    "tr_currency_not_units": {
+        "calculator": 0.0015939261065796018,
+        "currency_converter": 0.9933615922927856,
+        "search_web": 0.002957264194265008,
+        "stock_quote": 0.0010269081685692072,
+        "unit_converter": 0.0010602627880871296
+    },
+    "tr_bug_to_issue_tracker": {
+        "create_jira_issue": 0.9768233299255371,
+        "db_query": 0.0017608097987249494,
+        "refund_order": 0.0010771870147436857,
+        "schedule_meeting": 0.0014011943712830544,
+        "search_knowledge_base": 0.006581746507436037,
+        "send_email": 0.003227979177609086,
+        "slack_post_message": 0.006000997498631477,
+        "update_crm_contact": 0.003126712515950203
+    },
+    "tr_reminder_ambiguous": {
+        "calendar_create_event": 0.2697910666465759,
+        "create_todo": 0.6757387518882751,
+        "send_sms": 0.01604357548058033,
+        "set_reminder": 0.03842655569314957
+    },
+    "tr_no_tool_fits": {
+        "false": 0.9917516112327576,
+        "true": 0.008248435333371162
+    },
+    "tr_needs_two_calls": {
+        "false": 0.09724409878253937,
+        "true": 0.902755856513977
+    },
+    "rc_opening_date_moved": {
+        "false": 0.8799737691879272,
+        "true": 0.12002617865800858
+    },
+    "rc_population_compare": {
+        "equal": 0.005424736067652702,
+        "lindvik": 0.005205291323363781,
+        "not_stated": 0.007428813260048628,
+        "osterholm": 0.9819412231445312
+    },
+    "rc_trial_not_significant": {
+        "false": 0.9945449829101562,
+        "true": 0.005455043166875839
+    },
+    "rc_sibling_age": {
+        "false": 0.05951540544629097,
+        "true": 0.9404845833778381
+    },
+    "rc_who_signed": {
+        "helen_cho": 0.0027018641121685505,
+        "laura_mendes": 0.976381242275238,
+        "not_stated": 0.008733484894037247,
+        "raj_patel": 0.008872836828231812,
+        "the_legal_team": 0.003310577943921089
+    },
+    "rc_headcount_arithmetic": {
+        "n_103": 0.035441093146800995,
+        "n_113": 0.8095182776451111,
+        "n_123": 0.11173581331968307,
+        "n_128": 0.03920059651136398,
+        "n_143": 0.004104234743863344
+    },
+    "rc_hedged_certainty": {
+        "0": 0.871018648147583,
+        "1": 0.10211415588855743,
+        "2": 0.02686723694205284
+    },
+    "rc_bridge_pedestrians": {
+        "false": 0.036223154515028,
+        "true": 0.9637768864631653
+    },
+    "er_ice_melts": {
+        "false": 0.5220169425010681,
+        "true": 0.4779830276966095
+    },
+    "er_arrival_late": {
+        "fifteen_minutes_late": 0.362907350063324,
+        "five_minutes_late": 0.2881905138492584,
+        "on_time": 0.1148773655295372,
+        "well_early": 0.234024778008461
+    },
+    "er_seating_short": {
+        "false": 0.10593882203102112,
+        "true": 0.8940612077713013
+    },
+    "er_rain_umbrella": {
+        "nothing_extra": 0.02765408530831337,
+        "shorts": 0.03584445267915726,
+        "sunglasses": 0.005114341154694557,
+        "sunscreen": 0.002903051907196641,
+        "umbrella": 0.9284841418266296
+    },
+    "er_enough_eggs": {
+        "false": 0.02483394555747509,
+        "true": 0.9751660823822021
+    },
+    "er_hotel_before_checkin": {
+        "false": 0.2399909794330597,
+        "true": 0.7600090503692627
+    },
+    "er_farewell_gift": {
+        "card_and_coffee_gift_card": 0.7387521862983704,
+        "cash_envelope": 0.11110589653253555,
+        "joke_gift_about_quitting": 0.004472264554351568,
+        "luxury_watch": 0.008072622120380402,
+        "nothing": 0.1375969797372818
+    },
+    "er_cactus_survival": {
+        "0": 0.030061984434723854,
+        "1": 0.017764819785952568,
+        "2": 0.9521732330322266
+    },
+    "bd_meal_per_person_ok": {
+        "false": 0.9602788686752319,
+        "true": 0.03972119465470314
+    },
+    "bd_invoice_overdue": {
+        "false": 0.15375854074954987,
+        "true": 0.8462414741516113
+    },
+    "bd_termination_for_convenience": {
+        "false": 0.028591979295015335,
+        "true": 0.9714080691337585
+    },
+    "bd_invoice_math_correct": {
+        "false": 0.17011001706123352,
+        "true": 0.8298899531364441
+    },
+    "bd_approval_threshold": {
+        "board": 0.0064699393697083,
+        "director": 0.7623924016952515,
+        "manager": 0.01091010682284832,
+        "no_approval": 0.015175573527812958,
+        "vp_and_finance": 0.20505203306674957
+    },
+    "bd_doc_type_sow": {
+        "invoice": 0.0005702496273443103,
+        "nda": 0.00041167877498082817,
+        "offer_letter": 0.0004393385024741292,
+        "privacy_policy": 0.000572594057302922,
+        "purchase_order": 0.0018539773300290108,
+        "statement_of_work": 0.9961521029472351
+    },
+    "bd_clause_risk": {
+        "0": 0.07163234055042267,
+        "1": 0.13948935270309448,
+        "2": 0.788878321647644
+    },
+    "bd_expense_completeness": {
+        "0": 0.07821515947580338,
+        "1": 0.7103034853935242,
+        "2": 0.21148136258125305
+    },
+    "misc_triage_chest_pain": {
+        "0": 0.008892983198165894,
+        "1": 0.02539009042084217,
+        "2": 0.005494861863553524,
+        "3": 0.9602220058441162
+    },
+    "misc_review_comment_tone": {
+        "0": 0.0037480145692825317,
+        "1": 0.003961536567658186,
+        "2": 0.024759473279118538,
+        "3": 0.9675310254096985
+    },
+    "misc_meeting_slot": {
+        "mon_10": 0.024647779762744904,
+        "mon_11": 0.04759342968463898,
+        "no_common_slot": 0.8137203454971313,
+        "tue_14": 0.010317109525203705,
+        "wed_10": 0.10372139513492584
+    },
+    "misc_implied_deadline": {
+        "before_9am_tomorrow": 0.1483926773071289,
+        "end_of_week": 0.0027309677097946405,
+        "no_deadline": 0.8464061617851257,
+        "within_the_hour": 0.0024702067021280527
+    },
+    "misc_code_bug_empty_list": {
+        "division_by_zero_on_empty": 0.9574168920516968,
+        "infinite_loop": 0.0027933812234550714,
+        "no_problem": 0.033956412225961685,
+        "off_by_one": 0.0022642603144049644,
+        "wrong_variable": 0.0035690416116267443
+    },
+    "misc_mentions_allergy": {
+        "false": 0.19722557067871094,
+        "true": 0.8027744293212891
+    },
+    "misc_confirm_not_reschedule": {
+        "false": 0.9988038539886475,
+        "true": 0.0011961659183725715
+    },
+    "misc_formality": {
+        "0": 0.6131241917610168,
+        "1": 0.3085823953151703,
+        "2": 0.07041943818330765,
+        "3": 0.007873916998505592
+    }
+}

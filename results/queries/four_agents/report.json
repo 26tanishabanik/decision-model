@@ -1,0 +1,364 @@
+{
+ "table": {
+  "earlier": {
+   "ALL": [
+    0.708,
+    267
+   ],
+   "type:choice": [
+    0.722,
+    108
+   ],
+   "domain:customer_support": [
+    0.826,
+    23
+   ],
+   "yes_no:says_true": [
+    0.509,
+    112
+   ],
+   "type:yes_no": [
+    0.723,
+    112
+   ],
+   "yes_no:bare": [
+    0.78,
+    59
+   ],
+   "yes_no:gold_false": [
+    0.707,
+    58
+   ],
+   "yes_no:described": [
+    0.66,
+    53
+   ],
+   "yes_no:gold_true": [
+    0.741,
+    54
+   ],
+   "score:within_1": [
+    0.851,
+    47
+   ],
+   "type:score": [
+    0.638,
+    47
+   ],
+   "domain:business_documents": [
+    0.652,
+    23
+   ],
+   "domain:workplace": [
+    0.667,
+    21
+   ],
+   "domain:agent_traces": [
+    0.636,
+    22
+   ],
+   "domain:tool_routing": [
+    0.773,
+    22
+   ],
+   "domain:code_review": [
+    0.545,
+    22
+   ],
+   "domain:security": [
+    0.783,
+    23
+   ],
+   "domain:content_moderation": [
+    0.682,
+    22
+   ],
+   "domain:safety_triage": [
+    0.818,
+    22
+   ],
+   "domain:reading_comprehension": [
+    0.727,
+    22
+   ],
+   "domain:everyday_reasoning": [
+    0.636,
+    22
+   ],
+   "domain:general_knowledge_with_context": [
+    0.739,
+    23
+   ]
+  },
+  "frozen": {
+   "ALL": [
+    0.76,
+    267
+   ],
+   "type:choice": [
+    0.87,
+    108
+   ],
+   "domain:customer_support": [
+    0.826,
+    23
+   ],
+   "yes_no:says_true": [
+    0.473,
+    112
+   ],
+   "type:yes_no": [
+    0.777,
+    112
+   ],
+   "yes_no:bare": [
+    0.729,
+    59
+   ],
+   "yes_no:gold_false": [
+    0.793,
+    58
+   ],
+   "yes_no:described": [
+    0.83,
+    53
+   ],
+   "yes_no:gold_true": [
+    0.759,
+    54
+   ],
+   "score:within_1": [
+    0.83,
+    47
+   ],
+   "type:score": [
+    0.468,
+    47
+   ],
+   "domain:business_documents": [
+    0.696,
+    23
+   ],
+   "domain:workplace": [
+    0.619,
+    21
+   ],
+   "domain:agent_traces": [
+    0.591,
+    22
+   ],
+   "domain:tool_routing": [
+    0.864,
+    22
+   ],
+   "domain:code_review": [
+    0.682,
+    22
+   ],
+   "domain:security": [
+    0.783,
+    23
+   ],
+   "domain:content_moderation": [
+    0.909,
+    22
+   ],
+   "domain:safety_triage": [
+    0.864,
+    22
+   ],
+   "domain:reading_comprehension": [
+    0.682,
+    22
+   ],
+   "domain:everyday_reasoning": [
+    0.682,
+    22
+   ],
+   "domain:general_knowledge_with_context": [
+    0.913,
+    23
+   ]
+  },
+  "frozen_l20_mean": {
+   "ALL": [
+    0.854,
+    267
+   ],
+   "type:choice": [
+    0.917,
+    108
+   ],
+   "domain:customer_support": [
+    0.913,
+    23
+   ],
+   "yes_no:says_true": [
+    0.464,
+    112
+   ],
+   "type:yes_no": [
+    0.821,
+    112
+   ],
+   "yes_no:bare": [
+    0.797,
+    59
+   ],
+   "yes_no:gold_false": [
+    0.845,
+    58
+   ],
+   "yes_no:described": [
+    0.849,
+    53
+   ],
+   "yes_no:gold_true": [
+    0.796,
+    54
+   ],
+   "score:within_1": [
+    0.936,
+    47
+   ],
+   "type:score": [
+    0.787,
+    47
+   ],
+   "domain:business_documents": [
+    0.783,
+    23
+   ],
+   "domain:workplace": [
+    0.905,
+    21
+   ],
+   "domain:agent_traces": [
+    0.727,
+    22
+   ],
+   "domain:tool_routing": [
+    0.864,
+    22
+   ],
+   "domain:code_review": [
+    0.864,
+    22
+   ],
+   "domain:security": [
+    0.957,
+    23
+   ],
+   "domain:content_moderation": [
+    0.909,
+    22
+   ],
+   "domain:safety_triage": [
+    1.0,
+    22
+   ],
+   "domain:reading_comprehension": [
+    0.818,
+    22
+   ],
+   "domain:everyday_reasoning": [
+    0.591,
+    22
+   ],
+   "domain:general_knowledge_with_context": [
+    0.913,
+    23
+   ]
+  },
+  "lora": {
+   "ALL": [
+    0.91,
+    267
+   ],
+   "type:choice": [
+    0.917,
+    108
+   ],
+   "domain:customer_support": [
+    0.957,
+    23
+   ],
+   "yes_no:says_true": [
+    0.491,
+    112
+   ],
+   "type:yes_no": [
+    0.92,
+    112
+   ],
+   "yes_no:bare": [
+    0.932,
+    59
+   ],
+   "yes_no:gold_false": [
+    0.914,
+    58
+   ],
+   "yes_no:described": [
+    0.906,
+    53
+   ],
+   "yes_no:gold_true": [
+    0.926,
+    54
+   ],
+   "score:within_1": [
+    1.0,
+    47
+   ],
+   "type:score": [
+    0.872,
+    47
+   ],
+   "domain:business_documents": [
+    0.783,
+    23
+   ],
+   "domain:workplace": [
+    0.905,
+    21
+   ],
+   "domain:agent_traces": [
+    0.864,
+    22
+   ],
+   "domain:tool_routing": [
+    0.909,
+    22
+   ],
+   "domain:code_review": [
+    0.955,
+    22
+   ],
+   "domain:security": [
+    1.0,
+    23
+   ],
+   "domain:content_moderation": [
+    0.955,
+    22
+   ],
+   "domain:safety_triage": [
+    1.0,
+    22
+   ],
+   "domain:reading_comprehension": [
+    0.864,
+    22
+   ],
+   "domain:everyday_reasoning": [
+    0.773,
+    22
+   ],
+   "domain:general_knowledge_with_context": [
+    0.957,
+    23
+   ]
+  }
+ }
+}
